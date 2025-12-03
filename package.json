@@ -1,0 +1,35 @@
+{
+  "name": "kiro-csv-automation-hero",
+  "version": "1.0.0",
+  "description": "Kiro Heroes Challenge Week 2 - Smart CSV Automation Bot",
+  "main": "./.kiro/workflow.ts",
+  "scripts": {
+    "start": "kiro run",
+    "build": "kiro build",
+    "test": "kiro test",
+    "dev": "kiro dev",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "kiro",
+    "automation",
+    "csv",
+    "data-processing",
+    "file-system",
+    "hooks"
+  ],
+  "author": "Dipayan Sardar",
+  "license": "MIT",
+  "dependencies": {
+    "@kiro/runtime": "^1.2.0",
+    "@kiro/fs": "^1.0.0",
+    "@kiro/hooks": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
