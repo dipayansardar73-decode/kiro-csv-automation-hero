@@ -1,0 +1,44 @@
+# Kiro CSV Automation Configuration
+name: csv-automation-bot
+version: 1.0.0
+description: Smart CSV automation bot for organizing boring data tasks
+
+# Kiro runtime settings
+runtime:
+  version: 1.2.0
+  timeout: 300
+  maxMemory: 512MB
+
+# Input/Output directories
+paths:
+  input: ./data/input
+  output: ./data/output
+  logs: ./logs
+
+# Automation settings
+automation:
+  enabled: true
+  processInterval: 3600  # 1 hour in seconds
+  retryAttempts: 3
+  retryDelay: 5
+
+# CSV Processing options
+csv:
+  delimiter: ','
+  encoding: 'utf-8'
+  quoteChar: '"'
+  escapeChar: '\\'
+
+# Features
+features:
+  dataCleaning: true
+  duplicateRemoval: true
+  dataValidation: true
+  autoArchive: true
+  generateReports: true
+
+# Logging
+logging:
+  level: info
+  format: json
+  maxFileSize: 100MB
